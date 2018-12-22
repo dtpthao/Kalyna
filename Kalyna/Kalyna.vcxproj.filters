@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\subfuntions">
+      <UniqueIdentifier>{b352ef54-98b9-4598-9bd7-e79fc54850d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\subfunctions">
+      <UniqueIdentifier>{dec098bd-924f-47c7-9124-8166f9caae75}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="errands.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OFBmode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="m_col.cpp">
+      <Filter>Source Files\subfuntions</Filter>
+    </ClCompile>
+    <ClCompile Include="r_key.cpp">
+      <Filter>Source Files\subfuntions</Filter>
+    </ClCompile>
+    <ClCompile Include="s_box.cpp">
+      <Filter>Source Files\subfuntions</Filter>
+    </ClCompile>
+    <ClCompile Include="s_row.cpp">
+      <Filter>Source Files\subfuntions</Filter>
+    </ClCompile>
+    <ClCompile Include="xor_rkey.cpp">
+      <Filter>Source Files\subfuntions</Filter>
+    </ClCompile>
+    <ClCompile Include="BlockCipher.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Ciphertext.txt">
+      <Filter>Source Files</Filter>
+    </Text>
+    <Text Include="Plaintext.txt">
+      <Filter>Source Files</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="errands.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OFBmode.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="m_col.hpp">
+      <Filter>Header Files\subfunctions</Filter>
+    </ClInclude>
+    <ClInclude Include="r_key.hpp">
+      <Filter>Header Files\subfunctions</Filter>
+    </ClInclude>
+    <ClInclude Include="s_box.hpp">
+      <Filter>Header Files\subfunctions</Filter>
+    </ClInclude>
+    <ClInclude Include="s_row.hpp">
+      <Filter>Header Files\subfunctions</Filter>
+    </ClInclude>
+    <ClInclude Include="xor_rkey.hpp">
+      <Filter>Header Files\subfunctions</Filter>
+    </ClInclude>
+    <ClInclude Include="BlockCipher.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
