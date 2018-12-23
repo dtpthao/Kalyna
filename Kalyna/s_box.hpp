@@ -8,7 +8,7 @@ extern const unsigned char s_box[4][256];
 extern const unsigned char s_box_inv[4][256];
 
 //No restrict &src and &dst
-void SubBytes(uchar *src, int len, const uchar s[4][256], uchar *dst);
+void SubBytes(uint8_t *src, int len, const uint8_t s[4][256], uint8_t *dst);
 
 void TestSbox();
 

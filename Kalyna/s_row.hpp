@@ -3,7 +3,7 @@
 
 #include "errands.hpp"
 
-void ShiftRow(uchar *state, int len8);
+void ShiftRow(uint8_t *state, int len8);
 
 #endif // !_S_ROW_H
 

@@ -5,14 +5,14 @@ void testBlockEncrypt128128()
 	char sIV[33] = "101112131415161718191A1B1C1D1E1F";
 	char sKey[33] = "000102030405060708090A0B0C0D0E0F";
 	char sPt[33] = "11111111111111111111111111111111";
-	uchar IV[16], IV2[16], Key[16], C[16], P1[16], Plaintext[16];
+	uint8_t IV[16], IV2[16], Key[16], C[16], P1[16], Plaintext[16];
 	hex2char(sIV, 16, IV);
 	//hex2char(sIV, 16, IV2);
 	hex2char(sKey, 16, Key);
 	//hex2char(sPt, 16, Plaintext);
 
-	uchar **rkey = new uchar*[11];
-	for (int i = 0; i < 11; i++) rkey[i] = new uchar[16];
+	uint8_t **rkey = new uint8_t*[11];
+	for (int i = 0; i < 11; i++) rkey[i] = new uint8_t[16];
 	GenRoundKeys128128(rkey, Key);
 
 	cout << "Encrypt: " << endl;
@@ -43,10 +43,10 @@ void testBlockEncrypt128128()
 
 void testOFB()
 {
-	uchar *M = new uchar[1];
-	uchar *C = new uchar[1];
-	uchar *M1 = new uchar[1];
-	uchar *C1 = new uchar[1];
+	uint8_t *M = new uint8_t[1];
+	uint8_t *C = new uint8_t[1];
+	uint8_t *M1 = new uint8_t[1];
+	uint8_t *C1 = new uint8_t[1];
 
 	cout << "Encrypt: " << endl;
 	int lenM = readFile(M, "Plaintext.txt");

@@ -12,31 +12,31 @@ struct Kalyna {
 	int l;
 	int k;
 	int round;
-	uchar *v;
+	uint8_t *v;
 };
 
-//void AddrKey(uchar *state, int len, uchar *key);
+//void AddrKey(uint8_t *state, int len, uint8_t *key);
 //No restrict &dst and &src*
-void AddrKey(uchar *dst, int len, uchar *src1, uchar *src2);
+void AddrKey(uint8_t *dst, int len, uint8_t *src1, uint8_t *src2);
 
 //No restrict &dst and &src*
-void SubrKey(uchar *dst, int len, uchar *src1, uchar *src2);
+void SubrKey(uint8_t *dst, int len, uint8_t *src1, uint8_t *src2);
 
-//void GenInterKey(uchar *state, int len, uchar *Key);
-void GenInterKey(uchar *state, int len8, uchar *Lk, uchar *Rk);
+//void GenInterKey(uint8_t *state, int len, uint8_t *Key);
+void GenInterKey(uint8_t *state, int len8, uint8_t *Lk, uint8_t *Rk);
 
-void rotateR8x(uchar *src, unsigned int len8, int val, uchar *dst);
-void rotateL8x(uchar *src, unsigned int len8, int val, uchar *dst);
+void rotateR8x(uint8_t *src, unsigned int len8, int val, uint8_t *dst);
+void rotateL8x(uint8_t *src, unsigned int len8, int val, uint8_t *dst);
 
-//void evenKeys(uchar *IK, int len8, uchar *Key, int index, uchar *rkey);
-void evenKeys(uchar *IK, int len8, uchar *fiIK, uchar *rkey);
-void oddKeys(uchar *erkey, int l, uchar *orkey);
+//void evenKeys(uint8_t *IK, int len8, uint8_t *Key, int index, uint8_t *rkey);
+void evenKeys(uint8_t *IK, int len8, uint8_t *fiIK, uint8_t *rkey);
+void oddKeys(uint8_t *erkey, int l, uint8_t *orkey);
 
 /////////////////////////////////////////////////////
 
-void GenRoundKeys128128(uchar **roundKey, uchar * Key);
+void GenRoundKeys128128(uint8_t **roundKey, uint8_t * Key);
 
-void GenRoundKeys128256(uchar roundKey[15][16], uchar * Key);
+void GenRoundKeys128256(uint8_t roundKey[15][16], uint8_t * Key);
 
 ////////////////////////////////////////////////////
 void testAddSubrKey();

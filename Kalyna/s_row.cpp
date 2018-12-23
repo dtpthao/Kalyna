@@ -1,9 +1,9 @@
 #include "s_row.hpp"
 
 //when l = 128, shiftrow == shiftrow_inv, others case will be added later
-void ShiftRow(uchar *state, int len8) 
+void ShiftRow(uint8_t *state, int len8) 
 {
-	uchar tmp;
+	uint8_t tmp;
 	switch (len8) {
 	case 16:	
 		for (int i = 4; i < 8; i++) {
@@ -27,9 +27,9 @@ void ShiftRow(uchar *state, int len8)
 	}
 }
 
-void ShiftRow_inv(uchar *state, int len8)
+void ShiftRow_inv(uint8_t *state, int len8)
 {
-	uchar tmp;
+	uint8_t tmp;
 	switch (len8) {
 	case 16:
 		for (int i = 4; i < 8; i++) {
@@ -53,8 +53,8 @@ void ShiftRow_inv(uchar *state, int len8)
 	}
 }
 
-void ShiftRow256(uchar *state) 
+void ShiftRow256(uint8_t *state) 
 {
-	uchar tmp;
+	uint8_t tmp;
 	
 }

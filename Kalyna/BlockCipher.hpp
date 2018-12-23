@@ -7,8 +7,8 @@
 #include "xor_rkey.hpp"
 #include "r_key.hpp"
 
-void BlockEncrypt128128(uchar *state, uchar **rkey);
+void BlockEncrypt128128(uint8_t *state, uint8_t **rkey);
 
-void BlockDecrypt128128(uchar *state, uchar **rkey);
+void BlockDecrypt128128(uint8_t *state, uint8_t **rkey);
 
 #endif // !_BLOCKCIPHER_H

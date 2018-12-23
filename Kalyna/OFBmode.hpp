@@ -3,7 +3,7 @@
 
 #include "BlockCipher.hpp"
 
-void OFB128128(uchar *src, unsigned int len, uchar *&dst);
+void OFB128128(uint8_t *src, unsigned int len, uint8_t *&dst);
 
 
 #endif // !_OFBMODE_H

@@ -4,6 +4,6 @@
 #include "errands.hpp"
 
 //len of bytes
-void XorKey(uchar *state, int len, uchar *key);
+void XorKey(uint8_t *state, int len, uint8_t *key);
 
 #endif

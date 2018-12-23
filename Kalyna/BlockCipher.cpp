@@ -1,6 +1,6 @@
 #include "BlockCipher.hpp"
 
-void BlockEncrypt128128(uchar *state, uchar **rkey)
+void BlockEncrypt128128(uint8_t *state, uint8_t **rkey)
 {
 	const int len8 = 16;
 	AddrKey(state, len8, state, rkey[0]);
@@ -25,9 +25,9 @@ void BlockEncrypt128128(uchar *state, uchar **rkey)
 	//cout << "addrKey: "; printuc(state, len8);
 }
 
-void BlockDecrypt128128(uchar *state, uchar **rkey)
+void BlockDecrypt128128(uint8_t *state, uint8_t **rkey)
 {
-	//uchar rkey[11][16];
+	//uint8_t rkey[11][16];
 	int len8 = 16;
 	SubrKey(state, len8, state, rkey[10]);
 	//cout << "sudrKey : "; printuc(state, len8);
